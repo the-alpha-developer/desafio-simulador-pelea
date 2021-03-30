@@ -48,7 +48,7 @@ class PeleaTest extends TestCase
 
     public function test_tira_error_si_queremos_comenzar_y_no_estan_listos()
     {
-        $this->expectException("Peleadores no listos");
+        $this->expectException(\Exception::class);
 
         $goku = new Peleador("Goku");
         $vegeta = new Peleador("Vegeta");
